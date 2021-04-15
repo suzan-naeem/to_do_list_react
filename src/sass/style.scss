@@ -1,0 +1,135 @@
+// header
+.todo-header {
+  text-align: center;
+  padding-top: 80px;
+  h5 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+}
+
+body{
+  text-transform: capitalize;
+}
+
+
+
+// form
+.todo-form {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  .filter-todos {
+    border: 0 !important;
+    option {
+      font-size: 15px;
+    }
+  }
+
+  .input-group {
+    height: 50px;
+    .form-control {
+      border: 0;
+      height: 50px;
+      &:focus {
+        outline: 0 !important;
+        box-shadow: none !important;
+      }
+      &::placeholder {
+        font-size: 15px;
+      }
+    }
+    .input-group-append {
+      .btn {
+        background-color: #fff;
+        border: 0;
+        i {
+          color: #fff;
+          background-color: #563d7c;
+          padding: 5px;
+        }
+        &:focus {
+          outline: 0 !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+    .input-group-append {
+      .btn:hover {
+        background-color: #563d7c;
+      }
+    }
+  }
+}
+
+// todo-list-parent
+.todo-list-parent {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  .list-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 1s ease;
+    .delete-task,
+    .edit-task {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      color: red;
+      display: inline-block;
+      padding: 10px;
+      width: 40px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        color: #fff;
+        background-color: #563d7c;
+      }
+    }
+    .edit-task {
+      right: 40px;
+      border-radius: 0;
+      color: #563d7c;
+    }
+  }
+  .task-input{
+    // height: 100%;
+    // padding: 10px;
+    width: 85%;
+    color: #000;
+    background-color: transparent;
+    border: 0;
+  }
+  .lets-make{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .todo-form,
+  .todo-list-parent {
+    width: 100%;
+  }
+}
+
+// .select::after {
+//   content: "\25BC";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   padding: 1rem;
+//   background: #ff6f47;
+//   cursor: pointer;
+//   pointer-events: none;
+// }

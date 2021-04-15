@@ -1,0 +1,115 @@
+.todo-header {
+  text-align: center;
+  padding-top: 80px;
+}
+.todo-header h5 {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+body {
+  text-transform: capitalize;
+}
+
+.todo-form {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+.todo-form .filter-todos {
+  border: 0 !important;
+}
+.todo-form .filter-todos option {
+  font-size: 15px;
+}
+.todo-form .input-group {
+  height: 50px;
+}
+.todo-form .input-group .form-control {
+  border: 0;
+  height: 50px;
+}
+.todo-form .input-group .form-control:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.todo-form .input-group .form-control::placeholder {
+  font-size: 15px;
+}
+.todo-form .input-group .input-group-append .btn {
+  background-color: #fff;
+  border: 0;
+}
+.todo-form .input-group .input-group-append .btn i {
+  color: #fff;
+  background-color: #563d7c;
+  padding: 5px;
+}
+.todo-form .input-group .input-group-append .btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.todo-form .input-group .input-group-append .btn:hover {
+  background-color: #563d7c;
+}
+
+.todo-list-parent {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+.todo-list-parent .list-item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 1s ease;
+}
+.todo-list-parent .list-item .delete-task,
+.todo-list-parent .list-item .edit-task {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: red;
+  display: inline-block;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.todo-list-parent .list-item .delete-task:hover,
+.todo-list-parent .list-item .edit-task:hover {
+  color: #fff;
+  background-color: #563d7c;
+}
+.todo-list-parent .list-item .edit-task {
+  right: 40px;
+  border-radius: 0;
+  color: #563d7c;
+}
+.todo-list-parent .task-input {
+  width: 85%;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+}
+.todo-list-parent .lets-make {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 800px) {
+  .todo-form,
+.todo-list-parent {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
