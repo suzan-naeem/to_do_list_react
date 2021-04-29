@@ -5,7 +5,7 @@ function TodoHeader() {
     <div>
       <div className="container">
         <div className="todo-header">
-          <h5>Omar's Todo List</h5>
+          <h5>Suzan Todo List</h5>
         </div>
       </div>
     </div>
